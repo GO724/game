@@ -19,8 +19,7 @@ func MakeLookAroundHandlers() map[string]func(g *Game) string {
 		if len(onTable) > 0 {
 			view = fmt.Sprintf("%s на столе: %s, надо", view, outputItems(onTable))
 		}
-		if !g.
-			Player.Backpack {
+		if !g.Player.Backpack {
 			view = fmt.Sprintf("%s собрать рюкзак и", view)
 		}
 		view = fmt.Sprintf("%s идти в универ.", view)
